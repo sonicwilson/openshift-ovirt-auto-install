@@ -1,13 +1,13 @@
 ovirt:
-  username: vuberti@internal
+  username: admin@internal
   ca_file: /etc/pki/ovirt-engine/ca.pem
-  password: dfadfsdfsa
+  password: redhat
   data_center: Default
   cluster: Default
-  host: ovirt.righini.local
+  host: rhevm.lan
   storage:
      interface: virtio
-     storage_domain: big
+     storage_domain: rhevdata
   network:
     external:
        interface: virtio
@@ -19,8 +19,8 @@ ovirt:
        network: vlan22Test
        host_interface: eno2
 
-engine_password: sdaffdsdfdfs
+engine_password: redhat
 engine_fqdn: "{{ inventory_hostname }}"
-engine_user: vuberti@internal
+engine_user: admin@internal
 engine_cafile: /etc/pki/ovirt-engine/ca.pem
-ovirt_engine_ssh_user: vuberti
+ovirt_engine_ssh_user: admin
