@@ -11,7 +11,7 @@ networking:
   domain_name: example.com
 
 dhcp:
-  timezone: "Europe/Rome"
+  timezone: "United States/New York"
   start: 172.22.0.201
   end: 172.22.0.250
   ntp: 204.11.201.10
@@ -37,11 +37,7 @@ cluster:
   infra: 3
   workers: 3
   pullSecret: ''
-  proxy:
-    httpProxy: http://<username>:<pswd>@<ip>:<port> 
-    httpsProxy: http://<username>:<pswd>@<ip>:<port> 
-    noProxy: example.com 
-  additionalTrustBundle: |
+   additionalTrustBundle: |
         -----BEGIN CERTIFICATE-----
        
         -----END CERTIFICATE-----
