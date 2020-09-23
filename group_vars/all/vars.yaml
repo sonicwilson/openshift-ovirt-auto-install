@@ -30,9 +30,9 @@ lb:
  public_gateway: 172.19.0.1
 
 cluster:
-  name: bjlovers
-  ocp_user: vale
-  ocp_pass: weopiurasdfòlksjdfoiuwer
+  name: ocp
+  ocp_user: sonic
+  ocp_pass: redhatredhat
   masters: 3
   infra: 3
   workers: 3
